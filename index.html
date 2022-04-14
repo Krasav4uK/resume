@@ -6,28 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="my resume, резюме, БС">
     <meta name="description" content="Мое резюме. Резюме в html форме">
+
+    <link rel="stylesheet" href="my_style.css">
+    
     
     <title>My resume / Мое резюме</title>
 </head>
 <body>
-    <img src="img/me.jpg" width="200" alt="photo me" >
-    
+<div class="container">    
+    <nav class="navbar">
+        <ol>
+            <li>О себе</li>
+            <li>Мои хобби</li>
+            <li>Опыт работы</li>
+            <li>Заполнить и отправить форму</li>
+            <li>Мои соц. сети:</li>
+        </ol>
+    </nav>
+
+    <div class="card">   
+        <img src="img/me.jpg" class="avatar" alt="photo me" >
+    </div>    
     <h1>Сергей Боднар</h1>
 
-    <p>
-        Меня зовут<strong>Сергей</strong>. Мне 33 года. Хочу поменять изменить свою жизнь - стать
+    <div class="card" id="about_me1">
+        Меня зовут <strong>Сергей</strong>. Мне 33 года. Хочу поменять изменить свою жизнь - стать
         успешним, богатым, найти вторую половинку и заниматься любимым делом! 
         Девиз по жизни: <br> <br>   <em> "Чем меньше работаю - тем больше зарабатываю!</em>"
-    </p>
-    <h1>Мои хобби:</h1>
-    <ol type="1">
-        <li>Группы</li>
-        <li>Книги</li>
-        <li>Спорт</li>
-        <li><strong>Развитие</strong></li>
-    </ol>
+    </div>
+
+    <div  id="about_me2" class="card">
+        Сейчас усиленно занимаюсь программированием. <br>   
+        Буду менять свою жизнь к лучшему!
+    </div>
+
+    <div class="card">
+        <h1>Мои хобби:</h1>
+            <div>
+                <ol type="1" class="mylist">
+                    <li>Группы</li>
+                    <li>Книги</li>
+                    <li>Спорт</li>
+                    <li><strong>Развитие</strong></li>
+                </ol>
+            </div>
+    </div>
+
+    <div class="card">
     <h1>Опыт работы:</h1>
-    <table >
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -39,29 +66,32 @@
             <tr>
                 <td>ГУЮ</td>
                 <td>Бухгалтер</td>
-                <td>2013-2018</td>
+                <td id="last_td_age">2013-2018</td>
             </tr>
             <tr>
                 <td>ТМФ</td>
                 <td>Младкий бухгалтер</td>
-                <td>2018</td>
+                <td id="last_td_age">2018</td>
             </tr>
             <tr>
                 <td>ЧМ</td>
                 <td>Экономист</td>
-                <td>2018-2022</td>
+                <td id="last_td_age">2018-2022</td>
             </tr>
         </tbody>
     </table>
-    <br><br><br>
-    <!-- <hr width=""> -->
-    <form >
-        <div>
-            <label for="name">Имя</label>
+    </div>
+      <!-- <hr width=""> -->
+
+    <div class="card">
+        <h2>Связаться со мной:</h2>
+    <form class="myform">
+        <div class="on_block">
+            <label for="name">Имя</label><br>
             <input type="text" id="name" placeholder="Введите ваше Имя">
         </div>
-        <div>
-            <label for="email">Email</label>
+        <div class="on_block">
+            <label for="email">Email</label><br>
             <input type="email" id="email" placeholder="Введите ваш е-майл">
         </div>    
         <div>
@@ -69,15 +99,21 @@
             <br>
             <textarea id="text" cols="25" rows="10" placeholder="Text"></textarea>
         </div>
-        <div>
-            <button type="submit">Отправить форму</button>
+        <div >
+            <button type="submit" class="btn">Отправить форму</button>
         </div>
     </form>
+    </div>
+    
+    <div class="footer">
+     <h3><strong>Список социальных сетей:</strong></h3>
 
-    <h3><strong>Список социальных сетей:</strong></h3>
-
-    <a href="https://www.facebook.com" target="_blank">facebook</a>|
-    <a href="https://www.youtube.com/" target="_blank">youtube</a>|
-    <a href="https://vk.com/id_zdrt" target="_blank">Вконтакте</a>
+     <a href="https://www.facebook.com" target="_blank">facebook</a> |
+      <a href="https://www.youtube.com/" target="_blank">youtube</a> |
+     <a href="https://vk.com/" target="_blank">Вконтакте</a>
+     </div>
+</div>
 </body>
 </html>
+
+

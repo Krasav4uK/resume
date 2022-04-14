@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: notmal; 
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: #0f141e;
+    /* margin-bottom: 10px; */
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); 
+}
+
+#about_me1 {
+    background: #c2908f;
+}
+
+#about_me2 {
+    background: rgb(83, 122, 106);
+}
+
+
+.card {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.myform {
+    width: 100%;
+    background: rgb(206, 167, 96);
+    
+}
+
+.on_block {
+    width: 49%;
+    display: inline-block;
+}
+
+.myform div textarea, 
+.myform div input {
+    width: 100%;
+    font-size: 15px;
+    color:rgb(105, 14, 14);
+    outline: none;
+}
+
+.footer {
+    background:rgb(83, 122, 106);
+    padding: 10px 20px;
+    /* padding-top: 1px; */
+    border-radius: 5px;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/* a:visited {
+    color:#0f141e;
+} */
+
+a:active {
+    color:rgb(160, 112, 112);
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: red;
+}
+
+.mylist li{
+    border-bottom: 1px solid green;
+}
+
+.table {
+    width: 100%;
+    background:#0f141e;
+} 
+
+table th {
+    background:rgb(83, 122, 106);
+}
+
+
+table td {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table tr:nth-child(even) {
+    background: rgb(214, 131, 131);
+} 
+
+.table tr:nth-child(odd) {
+    background: rgb(192, 164, 164);
+}
+
+.navbar {
+    background: rgb(139, 139, 219);
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.navbar ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0px;
+    
+    
+}
+
+.navbar ol li {
+    padding: 8px 10px;
+    text-align: center;
+    /* border-right:1px solid #0f141e; */
+}
+
+.navbar ol li:hover {
+    background: #ea6767;
+}
+
+@media (max-width: 505px) {
+    .navbar ol {
+        display: inline;
+        padding: 10px 20px;
+    }
+}
